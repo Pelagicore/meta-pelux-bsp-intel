@@ -1,0 +1,25 @@
+LCONF_VERSION = "6"
+
+BBPATH = "${TOPDIR}"
+BSPDIR := "${@os.path.abspath(os.path.dirname(d.getVar('FILE', True)) + '/../..')}"
+
+BBFILES  ?= ""
+BBLAYERS ?= "                                         \
+  ${BSPDIR}/sources/poky/meta                         \
+  ${BSPDIR}/sources/poky/meta-yocto                   \
+  ${BSPDIR}/sources/poky/meta-yocto-bsp               \
+  ${BSPDIR}/sources/meta-openembedded/meta-oe         \
+  ${BSPDIR}/sources/meta-openembedded/meta-networking \
+  ${BSPDIR}/sources/meta-openembedded/meta-python     \
+  ${BSPDIR}/sources/meta-openembedded/meta-ruby       \
+  ${BSPDIR}/sources/meta-ivi/meta-ivi                 \
+  ${BSPDIR}/sources/meta-ivi/meta-ivi-bsp             \
+  ${BSPDIR}/sources/meta-pelux-bsp-intel              \
+  ${BSPDIR}/sources/meta-pelux                        \
+  ${BSPDIR}/sources/meta-intel                        \
+  ${BSPDIR}/sources/meta-virtualization               \
+  ${BSPDIR}/sources/meta-bistro                       \
+  ${BSPDIR}/sources/meta-qt5                          \
+  "
+
+
