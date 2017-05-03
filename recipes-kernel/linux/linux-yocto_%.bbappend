@@ -4,4 +4,7 @@
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 # Additional config fragments
-SRC_URI += "file://enable-veth.cfg"
+SRC_URI += " \
+    file://enable-veth.cfg \
+    file://enable-hid-multitouch.cfg \
+"
