@@ -9,9 +9,6 @@ BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()}"
 PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
 
 PACKAGE_CLASSES ?= "package_rpm"
-EXTRA_IMAGE_FEATURES_append = " debug-tweaks "
-
-DISTRO_FEATURES_append = " opengl "
 
 BB_DANGLINGAPPENDS_WARNONLY = "1"
 
