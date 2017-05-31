@@ -12,6 +12,3 @@ PACKAGE_CLASSES ?= "package_rpm"
 
 BB_DANGLINGAPPENDS_WARNONLY = "1"
 
-# For GStreamer etc
-LICENSE_FLAGS_WHITELIST = "commercial license"
-
